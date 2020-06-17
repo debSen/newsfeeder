@@ -1,5 +1,7 @@
 language: go
 go:
     - "1.12"
+install:
+    - go get github.com/gin-gonic/gin
 script:
-    - go test ./...
+    - cd debSen/newsfeeder; go test ./...
